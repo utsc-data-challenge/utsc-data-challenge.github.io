@@ -663,7 +663,7 @@ export default function Component() {
         <div className="container mx-auto px-4 text-center">
           <Separator className="my-8 bg-blue-800" />
           <p className="text-blue-200">
-            &copy; 2025 University of Toronto Scarborough. All rights reserved. | Building a sustainable future through data 🌍
+            &copy; 2025 University of Toronto Scarborough. All rights reserved. 🌍
           </p>
         </div>
       </footer>
