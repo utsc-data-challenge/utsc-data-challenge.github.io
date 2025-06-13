@@ -40,7 +40,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>UTSC Data Challenge</title>
-        <link rel="icon" href="/Logo.png" type="image/png" />
+        {/* 
+     <link rel="icon" href="/public/Logo.png" type="image/png" /> 
+  */}
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}

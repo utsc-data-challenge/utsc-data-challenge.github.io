@@ -54,19 +54,19 @@ export default function Component() {
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                 <Image 
-                  src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/Logo.png" 
+                  src="/Logo.png" 
                   alt="UTSC Logo" 
                   width={24} 
                   height={24}
                   onError={(e) => {
                     console.error('Error loading logo:', e);
-                    e.currentTarget.src = 'https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/placeholder.svg';
+                    e.currentTarget.src = '/public/placeholder.svg';
                   }}
                 />
               </div>
               <div>
-                <h1 className="text-xl font-bold">University of Toronto Scarborough</h1>
-                <p className="text-blue-200 text-sm">SDG Data Challenge 2025 - Results</p>
+                <h1 className="text-xl font-bold">UTSC</h1>
+                <p className="text-blue-200 text-sm">SDG Data Challenge</p>
               </div>
             </div>
             <nav className="hidden md:flex space-x-6">
@@ -85,9 +85,7 @@ export default function Component() {
               <button onClick={() => scrollToSection("sponsors")} className="hover:text-blue-200 transition-colors">
                 Sponsors
               </button>
-              <button onClick={() => scrollToSection("archive")} className="hover:text-blue-200 transition-colors">
-                Archive
-              </button>
+              
             </nav>
             <div className="flex space-x-2">
               <select
@@ -96,8 +94,6 @@ export default function Component() {
                 onChange={handleYearChange}
               >
                 <option value="2025">2025</option>
-                <option value="2024">2024</option>
-                <option value="2026">2026</option>
               </select>
               <Button className="bg-white text-[#003A79] hover:bg-blue-50" onClick={() => setShowShareModal(true)}>
                 <Share2 className="mr-2 h-4 w-4" />
@@ -128,13 +124,13 @@ export default function Component() {
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="flex justify-center mb-6 gap-4 flex-wrap">
             <div className="bg-white rounded-xl p-2 shadow-md flex items-center justify-center">
-              <Image src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/sdg.png" alt="Sustainable Development Goals" width={120} height={80} style={{objectFit: 'contain'}} />
+              <Image src="/sdg.png" alt="Sustainable Development Goals" width={120} height={80} style={{objectFit: 'contain'}} />
             </div>
             <div className="bg-white rounded-xl p-2 shadow-md flex items-center justify-center">
-              <Image src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/uoft.png" alt="University of Toronto Scarborough" width={180} height={80} style={{objectFit: 'contain'}} />
+              <Image src="/uoft.png" alt="University of Toronto Scarborough" width={180} height={80} style={{objectFit: 'contain'}} />
             </div>
             <div className="bg-white rounded-xl p-2 shadow-md flex items-center justify-center">
-              <Image src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/utsc60.png" alt="UTSC 60th Anniversary" width={90} height={90} style={{objectFit: 'contain'}} />
+              <Image src="/utsc60.png" alt="UTSC 60th Anniversary" width={90} height={90} style={{objectFit: 'contain'}} />
             </div>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">UTSC SDG Data Challenge 2025</h1>
@@ -142,17 +138,7 @@ export default function Component() {
             Celebrating 16 interdisciplinary teams and 57 students who analyzed UN Sustainable Development Goals data to
             address global challenges and create evidence-based solutions for a sustainable future.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button
-              size="lg"
-              className="bg-white text-[#003A79] hover:bg-blue-50 px-8 py-3"
-              onClick={() => scrollToSection("winners")}
-            >
-              <Trophy className="mr-2 h-5 w-5" />
-              View Winners
-            </Button>
-  
-          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             <div className="text-center bg-white/10 rounded-lg p-6 backdrop-blur-sm">
               <div className="text-3xl font-bold">57</div>
@@ -179,7 +165,7 @@ export default function Component() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto overflow-hidden mb-8">
             <div className="h-96 bg-gradient-to-br from-[#003A79] to-[#0060AC] flex items-center justify-center relative overflow-hidden">
-              <Image src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/Group.png" alt="Group Photo of All 57 Participants" fill style={{objectFit: 'cover'}} />
+              <Image src="/Group.png" alt="Group Photo of All 57 Participants" fill style={{objectFit: 'cover'}} />
             </div>
           </div>
           <div className="text-center mb-12">
@@ -218,7 +204,7 @@ export default function Component() {
               </CardContent>
             </Card>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="border-l-4 border-l-green-500">
+              <Card className="border-l-4 border-l-blue-500">
                 <CardHeader>
                   <CardTitle className="flex items-center text-[#003A79]">
                     <Target className="mr-2 h-5 w-5" />
@@ -250,7 +236,7 @@ export default function Component() {
                   </ul>
                 </CardContent>
               </Card>
-              <Card className="border-l-4 border-l-purple-500">
+              <Card className="border-l-4 border-l-blue-500">
                 <CardHeader>
                   <CardTitle className="flex items-center text-[#003A79]">
                     <Sparkles className="mr-2 h-5 w-5" />
@@ -282,79 +268,80 @@ export default function Component() {
           </div>
 
           {/* Main Winners */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto mb-16">
-            <Card className="text-center border-4 border-yellow-400 relative overflow-hidden transform hover:scale-105 transition-transform">
-              <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-yellow-400 to-yellow-500 text-black py-3 font-bold text-sm">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-7xl mx-auto mb-16">
+            <Card className="text-center border-4 border-blue-400 relative overflow-hidden transform hover:scale-105 transition-transform">
+            <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-blue-400 to-blue-500 text-white py-3 font-bold text-xl">
                 🥇 BEST IN SHOW
               </div>
               <CardHeader className="pt-16">
-                <Trophy className="h-16 w-16 text-yellow-500 mx-auto mb-4" />
-                <CardTitle className="text-xl text-[#003A79]">Sustainable Solutions Squad</CardTitle>
-                <CardDescription className="text-lg font-semibold">$300 - 1st Prize</CardDescription>
+                <Trophy className="h-16 w-16 text-blue-500 mx-auto mb-4" />
+                <CardTitle className="text-xl text-[#003A79]"> Analysis of GDP and GHG Emissions </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-2 text-gray-700">
-                  <p className="font-semibold text-sm">Team Members:</p>
-                  <p className="text-sm">Yousef Ibrahim, Veer Kapadia, Kole Robertson, Min Chau Nguyen</p>
-                  <p className="text-xs text-gray-600 mt-4 italic">&quot;An Analysis of GDP and GHG Emissions&quot;</p>
+                  <p className="font-semibold"> <b>Sustainable Solutions Squad:</b> Yousef Ibrahim, <br></br> Veer Kapadia, Kole Robertson, Min Chau Nguyen</p>
+                  
+                </div>
+                <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
+                  <Image src="/Team1.png" alt="Best in Show Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </CardContent>
             </Card>
 
             <Card className="text-center border-4 border-blue-400 relative overflow-hidden transform hover:scale-105 transition-transform">
-              <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-blue-400 to-blue-500 text-white py-3 font-bold text-sm">
+            <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-blue-400 to-blue-500 text-white py-3 font-bold text-xl">
                 🔍 BEST INSIGHT
               </div>
               <CardHeader className="pt-16">
                 <Star className="h-16 w-16 text-blue-500 mx-auto mb-4" />
-                <CardTitle className="text-xl text-[#003A79]">Spherical</CardTitle>
-                <CardDescription className="text-lg font-semibold">$200</CardDescription>
+                <CardTitle className="text-xl text-[#003A79]">Maternal Analytics & Monitoring Alliance (MAMA)</CardTitle>
+            
               </CardHeader>
               <CardContent>
                 <div className="space-y-2 text-gray-700">
-                  <p className="font-semibold text-sm">Team Members:</p>
-                  <p className="text-sm">Joshua Antonio Crisologo, Karissa Cruz, Aaron Fossi Mbah, Sasha Kodytuakku</p>
-                  <p className="text-xs text-gray-600 mt-4 italic">
-                    &quot;Sudan Under Strain: Setbacks in Child Health Outcomes&quot;
-                  </p>
+                  <p className="font-semibold"> <b>Spherical:</b> Joshua Antonio Crisologo, Karissa Cruz, <br></br> Aaron Fossi Mbah, Sasha Kodytuakku </p>
+                  
+                </div>
+                <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
+                  <Image src="/Team2.png" alt="Best Insight Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-4 border-purple-400 relative overflow-hidden transform hover:scale-105 transition-transform">
-              <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-purple-400 to-purple-500 text-white py-3 font-bold text-sm">
+            <Card className="text-center border-4 border-blue-400 relative overflow-hidden transform hover:scale-105 transition-transform">
+              <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-blue-400 to-blue-500 text-white py-3 font-bold text-xl">
                 📊 BEST VISUALIZATION
               </div>
               <CardHeader className="pt-16">
-                <Camera className="h-16 w-16 text-purple-500 mx-auto mb-4" />
-                <CardTitle className="text-xl text-[#003A79]">Raccoons</CardTitle>
-                <CardDescription className="text-lg font-semibold">$200</CardDescription>
+                <Camera className="h-16 w-16 text-blue-500 mx-auto mb-4" />
+                <CardTitle className="text-xl text-[#003A79]">Sudan Under Strain: Setbacks in Child Health
+                Outcomes</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-2 text-gray-700">
-                  <p className="font-semibold text-sm">Team Members:</p>
-                  <p className="text-sm">Andy Feng, Yingke He, Jesse Xu, Kevin You</p>
-                  <p className="text-xs text-gray-600 mt-4 italic">&quot;An Analysis of GDP and GHG Emissions&quot;</p>
+                  <p className="font-semibold"> <b>Racoons: </b> Andy Feng, Yingke He, Jesse Xu, Kevin You </p>
+                </div>
+                <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
+                  <Image src="/Team3.png" alt="Best Visualization Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="text-center border-4 border-green-400 relative overflow-hidden transform hover:scale-105 transition-transform">
-              <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-green-400 to-green-500 text-white py-3 font-bold text-sm">
+            <Card className="text-center border-4 border-blue-400 relative overflow-hidden transform hover:scale-105 transition-transform">
+              <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-blue-400 to-blue-500 text-white py-3 font-bold text-xl">
                 👥 PARTICIPANTS CHOICE
               </div>
               <CardHeader className="pt-16">
-                <Heart className="h-16 w-16 text-green-500 mx-auto mb-4" />
-                <CardTitle className="text-xl text-[#003A79]">Kecap Manis</CardTitle>
-                <CardDescription className="text-lg font-semibold">Special Recognition</CardDescription>
+                <Heart className="h-16 w-16 text-blue-500 mx-auto mb-4" />
+                <CardTitle className="text-xl text-[#003A79]">How to Decrease Indonesia&apos;s 2030 Tobacco Consumption Rate While Sustaining Its Economic Growth</CardTitle>
+                <CardDescription className="text-lg font-semibold"></CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-2 text-gray-700">
-                  <p className="font-semibold text-sm">Team Members:</p>
-                  <p className="text-sm">Muhammad Enrizky Brillian, Frans Budiman, Bomin Kim, Christopher Nathanael</p>
-                  <p className="text-xs text-gray-600 mt-4 italic">
-                    &quot;How to Decrease Indonesia&apos;s 2030 Tobacco Consumption Rate While Sustaining Its Economic Growth?&quot;
-                  </p>
+                  <p className="font-semibold text-sm"> <b>Kecap Manis:</b> Muhammad Enrizky Brillian, Frans Budiman, <br></br>Bomin Kim, Christopher Nathanael</p>
+                </div>
+                <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
+                  <Image src="/Team4.png" alt="Participants Choice Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </CardContent>
             </Card>
@@ -370,49 +357,94 @@ export default function Component() {
             Photo Gallery
           </h2>
 
-          {/* Winning Teams Photos */}
           <div>
-            <h3 className="text-2xl font-semibold text-[#003A79] text-center mb-8">Award-Winning Teams</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              {/* Sustainable Solutions Squad */}
-              <Card className="overflow-hidden border-4 border-yellow-400">
-                <CardHeader className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black py-3">
-                  <CardTitle className="text-center font-bold">🥇 Sustainable Solutions Squad</CardTitle>
-                </CardHeader>
-                <div className="h-64 bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/Team1.png" alt="Best in Show Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
-                </div>
-              </Card>
 
-              {/* Spherical */}
+              {/* Student Work */}
               <Card className="overflow-hidden border-4 border-blue-400">
                 <CardHeader className="bg-gradient-to-r from-blue-400 to-blue-500 text-white py-3">
-                  <CardTitle className="text-center font-bold">🔍 Spherical</CardTitle>
+                  <CardTitle className="text-center font-bold"> Participants at Work </CardTitle>
                 </CardHeader>
                 <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/Team2.png" alt="Best Insight Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                  <Image src="/student_work_1.png" alt="Students Working 1" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </Card>
 
-              {/* Raccoons */}
-              <Card className="overflow-hidden border-4 border-purple-400">
-                <CardHeader className="bg-gradient-to-r from-purple-400 to-purple-500 text-white py-3">
-                  <CardTitle className="text-center font-bold">📊 Raccoons</CardTitle>
+              {/* Student Work */}
+              <Card className="overflow-hidden border-4 border-blue-400">
+                <CardHeader className="bg-gradient-to-r from-blue-400 to-blue-500 text-white py-3">
+                  <CardTitle className="text-center font-bold"> Participants at Work </CardTitle>
                 </CardHeader>
-                <div className="h-64 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/Team3.png" alt="Best Visualization Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
+                  <Image src="/student_work_3.png" alt="Students Working 2" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </Card>
 
-              {/* Kecap Manis */}
-              <Card className="overflow-hidden border-4 border-green-400">
-                <CardHeader className="bg-gradient-to-r from-green-400 to-green-500 text-white py-3">
-                  <CardTitle className="text-center font-bold">👥 Kecap Manis</CardTitle>
+
+              {/* Final Presentations */}
+              <Card className="overflow-hidden border-4 border-blue-400">
+                <CardHeader className="bg-gradient-to-r from-blue-400 to-blue-500 text-white py-3">
+                  <CardTitle className="text-center font-bold"> Final Presentations </CardTitle>
                 </CardHeader>
-                <div className="h-64 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/Team4.png" alt="Participants Choice Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
+                  <Image src="/class.png" alt="Classroom" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </Card>
+
+
+              {/* Judges' Panel */}
+              <Card className="overflow-hidden border-4 border-blue-400">
+                <CardHeader className="bg-gradient-to-r from-blue-400 to-blue-500 text-white py-3">
+                  <CardTitle className="text-center font-bold"> Judging Panel </CardTitle>
+                </CardHeader>
+                <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
+                  <Image src="/panel.png" alt="Judges Panel" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                </div>
+              </Card>
+
+              {/* Team Presenting */}
+              <Card className="overflow-hidden border-4 border-blue-400">
+                <CardHeader className="bg-gradient-to-r from-blue-400 to-blue-500 text-white py-3">
+                  <CardTitle className="text-center font-bold"> Team Presenting </CardTitle>
+                </CardHeader>
+                <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
+                  <Image src="/group_pres_1.png" alt="Group Pres 1" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                </div>
+              </Card>
+              
+
+              {/* Team Presenting */}
+              <Card className="overflow-hidden border-4 border-blue-400">
+                <CardHeader className="bg-gradient-to-r from-blue-400 to-blue-500 text-white py-3">
+                  <CardTitle className="text-center font-bold"> Team Presenting </CardTitle>
+                </CardHeader>
+                <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
+                  <Image src="/group_pres_4.png" alt="Group Pres 2" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                </div>
+              </Card>
+              
+              {/* Organizers & Volunteers */}
+              <Card className="overflow-hidden border-4 border-blue-400">
+                <CardHeader className="bg-gradient-to-r from-blue-400 to-blue-500 text-white py-3">
+                  <CardTitle className="text-center font-bold"> Organizers & Volunteers </CardTitle>
+                </CardHeader>
+                <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
+                  <Image src="/orgvol.png" alt="Group Pres 1" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                </div>
+              </Card>
+              
+
+              {/* Group Photo */}
+              <Card className="overflow-hidden border-4 border-blue-400">
+                <CardHeader className="bg-gradient-to-r from-blue-400 to-blue-500 text-white py-3">
+                  <CardTitle className="text-center font-bold"> Group Photo </CardTitle>
+                </CardHeader>
+                <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
+                  <Image src="/group_photo.png" alt="Group Pres 2" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                </div>
+              </Card>
+              
+
             </div>
           </div>
         </div>
@@ -423,21 +455,20 @@ export default function Component() {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-[#003A79] text-center mb-12">Mentors, Judges, and Volunteers</h2>
           <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">
-            The challenge included mentorship from experts who provided valuable guidance and support to the teams. We
-            had ten dedicated mentors—mostly graduate students—who played a key role throughout the event.
+            The challenge included mentorship from experts who provided valuable guidance and support to the teams.
+            In particular, we want to acknowledge <b>David Kwasny</b> and <b>Elizabeth O'Brien</b> from UTSC Library for 
+            delivering an insightful pre-event workshop on analyzing open SDG data with Power BI.
+            We also had ten dedicated mentors—mostly graduate students—who played a key role throughout the event. 
           </p>
 
           <div className="max-w-3xl mx-auto overflow-hidden mb-8">
             <div className="h-80 bg-gradient-to-br from-[#0060AC] to-[#003A79] flex items-center justify-center relative overflow-hidden">
               <Image 
-                src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/Judge.png" 
-                alt="Panel of Expert Judges" 
+                src="/Volunteers.png" 
+                alt="Volunteers" 
                 fill 
                 style={{objectFit: 'cover'}}
-                onError={(e) => {
-                  console.error('Error loading judge image:', e);
-                  e.currentTarget.src = 'https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/placeholder.svg';
-                }}
+                
                 priority
                 quality={75}
                 loading="eager"
@@ -532,6 +563,7 @@ export default function Component() {
               </CardContent>
             </Card>
           </div>
+         
         </div>
       </section>
 
@@ -546,124 +578,86 @@ export default function Component() {
             We gratefully acknowledge the generous support of the following sponsors, whose contributions made this
             event possible
           </p>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <Card className="text-center border-l-4 border-l-[#003A79]">
-              <CardContent className="p-6">
+            <a href="https://www.utsc.utoronto.ca/cms/">
+            <CardContent className="p-6">
                 <h3 className="font-semibold text-[#003A79] mb-2">
                   Department of Computer & Mathematical Sciences, UTSC
                 </h3>
                 <div className="bg-white rounded-xl p-3 shadow flex items-center justify-center mt-4">
-                  <Image src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/Sponser1.png" alt="Sponsor 1" width={180} height={100} style={{objectFit: 'contain'}} />
+                  
+                  <Image src="/Sponsor1.png" alt="Sponsor 1" width={180} height={100} style={{objectFit: 'contain'}} />
+            
                 </div>
               </CardContent>
-            </Card>
+              </a>
+              </Card>
+
             <Card className="text-center border-l-4 border-l-[#0060AC]">
-              <CardContent className="p-6">
+            <a href="https://www.utsc.utoronto.ca/sociology/">
+            <CardContent className="p-6">
                 <h3 className="font-semibold text-[#003A79] mb-2">Department of Sociology, UTSC</h3>
                 <div className="bg-white rounded-xl p-3 shadow flex items-center justify-center mt-4">
-                  <Image src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/Sponser2.png" alt="Sponsor 2" width={180} height={100} style={{objectFit: 'contain'}} />
+                  <Image src="/Sponsor2.png" alt="Sponsor 2" width={180} height={100} style={{objectFit: 'contain'}} />
                 </div>
               </CardContent>
+              </a>
             </Card>
+
             <Card className="text-center border-l-4 border-l-[#003A79]">
-              <CardContent className="p-6">
+            <a href="https://utsc.library.utoronto.ca/">
+            <CardContent className="p-6">
                 <h3 className="font-semibold text-[#003A79] mb-2">UTSC Library</h3>
                 <div className="bg-white rounded-xl p-3 shadow flex items-center justify-center mt-4">
-                  <Image src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/Sponser3.png" alt="Sponsor 3" width={180} height={100} style={{objectFit: 'contain'}} />
+                  <Image src="/Sponsor3.png" alt="Sponsor 3" width={180} height={100} style={{objectFit: 'contain'}} />
                 </div>
-              </CardContent>
+              </CardContent></a>
             </Card>
+
             <Card className="text-center border-l-4 border-l-[#0060AC]">
+            <a href="https://www.utsc.utoronto.ca/polisci/">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-[#003A79] mb-2">Department of Political Science, UTSC</h3>
                 <div className="bg-white rounded-xl p-3 shadow flex items-center justify-center mt-4">
-                  <Image src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/Sponser4.png" alt="Sponsor 4" width={180} height={100} style={{objectFit: 'contain'}} />
+                  <Image src="/Sponsor4.png" alt="Sponsor 4" width={180} height={100} style={{objectFit: 'contain'}} />
                 </div>
-              </CardContent>
+              </CardContent></a>
             </Card>
+
             <Card className="text-center border-l-4 border-l-[#003A79]">
+              <a href="https://sdg.utoronto.ca/">
               <CardContent className="p-6">
-                <h3 className="font-semibold text-[#003A79] mb-2">SDGs @UofT Institutional Strategic Initiative</h3>
+                <h3 className="font-semibold text-[#003A79] mb-2">SDGs @UofT </h3>
                 <div className="bg-white rounded-xl p-3 shadow flex items-center justify-center mt-4">
-                  <Image src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/Sponser5.png" alt="Sponsor 5" width={180} height={100} style={{objectFit: 'contain'}} />
+                  <Image src="/Sponsor5.png" alt="Sponsor 5" width={180} height={100} style={{objectFit: 'contain'}} />
                 </div>
-              </CardContent>
+              </CardContent></a>
             </Card>
+
             <Card className="text-center border-l-4 border-l-[#0060AC]">
-              <CardContent className="p-6">
+              <a href="https://datasciences.utoronto.ca/">
+                <CardContent className="p-6">
                 <h3 className="font-semibold text-[#003A79] mb-2">
-                  The Data Sciences Institute&apos;s Program in Computational and Quantitative Social Science
+                  Data Sciences Institute
                 </h3>
                 <div className="bg-white rounded-xl p-3 shadow flex items-center justify-center mt-4">
-                  <Image src="https://utsc-sdg-data-challenge.github.io/UTSC-Data-Challenge/Sponser6.png" alt="Sponsor 6" width={180} height={100} style={{objectFit: 'contain'}} />
+                  <Image src="/Sponsor6.png" alt="Sponsor 6" width={180} height={100} style={{objectFit: 'contain'}} />
                 </div>
-              </CardContent>
+                </CardContent></a>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Archive Section */}
-      <section id="archive" className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-[#003A79] text-center mb-12">Challenge Archive</h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Card className="text-center border-2 border-[#003A79] bg-[#003A79] text-white">
-                <CardHeader>
-                  <CardTitle className="text-2xl">2025</CardTitle>
-                  <CardDescription className="text-blue-200">Current Challenge</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm mb-4">UTSC SDG Data Challenge</p>
-                  <Badge className="bg-white text-[#003A79]">Active</Badge>
-                </CardContent>
-              </Card>
-              <Card className="text-center hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-[#003A79]">2024</CardTitle>
-                  <CardDescription>Previous Challenge</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-gray-600 mb-4">Statistics Competition 2024</p>
-                  <Button
-                    variant="outline"
-                    className="border-[#003A79] text-[#003A79] hover:bg-[#003A79] hover:text-white"
-                    onClick={() => router.push("/2024")}
-                  >
-                    View Results
-                    <ChevronRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </CardContent>
-              </Card>
-              <Card className="text-center hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-[#003A79]">2026</CardTitle>
-                  <CardDescription>Upcoming Challenge</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-gray-600 mb-4">Planning in Progress</p>
-                  <Button
-                    variant="outline"
-                    className="border-[#003A79] text-[#003A79] hover:bg-[#003A79] hover:text-white"
-                    onClick={() => router.push("/2026")}
-                  >
-                    Get Updates
-                    <ChevronRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-[#003A79] text-white py-12">
         <div className="container mx-auto px-4 text-center">
           <Separator className="my-8 bg-blue-800" />
           <p className="text-blue-200">
-            &copy; 2025 University of Toronto Scarborough. All rights reserved. 🌍
+            &copy; 2025 University of Toronto Scarborough. All rights reserved. 
           </p>
         </div>
       </footer>
