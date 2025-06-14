@@ -12,13 +12,11 @@ import {
   Award,
   Camera,
   Share2,
-  ChevronRight,
   Sparkles,
   Target,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 
 export default function Component() {
@@ -456,7 +454,7 @@ export default function Component() {
           <h2 className="text-4xl font-bold text-[#003A79] text-center mb-12">Mentors, Judges, and Volunteers</h2>
           <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">
             The challenge included mentorship from experts who provided valuable guidance and support to the teams.
-            In particular, we want to acknowledge <b>David Kwasny</b> and <b>Elizabeth O'Brien</b> from UTSC Library for 
+            In particular, we want to acknowledge <b>David Kwasny</b> and <b>Elizabeth O&apos;Brien</b> from UTSC Library for 
             delivering an insightful pre-event workshop on analyzing open SDG data with Power BI.
             We also had ten dedicated mentors—mostly graduate students—who played a key role throughout the event. 
           </p>
