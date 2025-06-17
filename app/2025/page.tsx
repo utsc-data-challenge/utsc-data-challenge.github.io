@@ -52,7 +52,7 @@ export default function Component() {
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                 <Image 
-                  src="/Logo.png" 
+                  src="/2005/Logo.png" 
                   alt="UTSC Logo" 
                   width={24} 
                   height={24}
@@ -122,13 +122,13 @@ export default function Component() {
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="flex justify-center mb-6 gap-4 flex-wrap">
             <div className="bg-white rounded-xl p-2 shadow-md flex items-center justify-center">
-              <Image src="/sdg.png" alt="Sustainable Development Goals" width={120} height={80} style={{objectFit: 'contain'}} />
+              <Image src="/2005/sdg.png" alt="Sustainable Development Goals" width={120} height={80} style={{objectFit: 'contain'}} />
             </div>
             <div className="bg-white rounded-xl p-2 shadow-md flex items-center justify-center">
-              <Image src="/uoft.png" alt="University of Toronto Scarborough" width={180} height={80} style={{objectFit: 'contain'}} />
+              <Image src="/2005/uoft.png" alt="University of Toronto Scarborough" width={180} height={80} style={{objectFit: 'contain'}} />
             </div>
             <div className="bg-white rounded-xl p-2 shadow-md flex items-center justify-center">
-              <Image src="/utsc60.png" alt="UTSC 60th Anniversary" width={90} height={90} style={{objectFit: 'contain'}} />
+              <Image src="/2005/utsc60.png" alt="UTSC 60th Anniversary" width={90} height={90} style={{objectFit: 'contain'}} />
             </div>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6">UTSC SDG Data Challenge 2025</h1>
@@ -163,7 +163,7 @@ export default function Component() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto overflow-hidden mb-8">
             <div className="h-96 bg-gradient-to-br from-[#003A79] to-[#0060AC] flex items-center justify-center relative overflow-hidden">
-              <Image src="/group_photo.png" alt="Group Photo of All 57 Participants" fill style={{objectFit: 'cover'}} />
+              <Image src="/2005/group_photo.png" alt="Group Photo of All 57 Participants" fill style={{objectFit: 'cover'}} />
             </div>
           </div>
           <div className="text-center mb-12">
@@ -281,7 +281,7 @@ export default function Component() {
                   
                 </div>
                 <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="/Team1.png" alt="Best in Show Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                  <Image src="/2005/Team1.png" alt="Best in Show Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </CardContent>
             </Card>
@@ -301,7 +301,7 @@ export default function Component() {
                   
                 </div>
                 <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="/Team2.png" alt="Best Insight Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                  <Image src="/2005/Team2.png" alt="Best Insight Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </CardContent>
             </Card>
@@ -320,7 +320,7 @@ export default function Component() {
                   <p className="font-semibold"> <b>Racoons: </b> Andy Feng, Yingke He, Jesse Xu, Kevin You </p>
                 </div>
                 <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="/Team3.png" alt="Best Visualization Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                  <Image src="/2005/Team3.png" alt="Best Visualization Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </CardContent>
             </Card>
@@ -339,7 +339,7 @@ export default function Component() {
                   <p className="font-semibold text-sm"> <b>Kecap Manis:</b> Muhammad Enrizky Brillian, Frans Budiman, <br></br>Bomin Kim, Christopher Nathanael</p>
                 </div>
                 <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="/Team4.png" alt="Participants Choice Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                  <Image src="/2005/Team4.png" alt="Participants Choice Winners" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </CardContent>
             </Card>
@@ -364,7 +364,7 @@ export default function Component() {
                   <CardTitle className="text-center font-bold"> Participants at Work </CardTitle>
                 </CardHeader>
                 <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="/student_work_1.png" alt="Students Working 1" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                  <Image src="/2005/student_work_1.png" alt="Students Working 1" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </Card>
 
@@ -374,7 +374,7 @@ export default function Component() {
                   <CardTitle className="text-center font-bold"> Participants at Work </CardTitle>
                 </CardHeader>
                 <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="/student_work_3.png" alt="Students Working 2" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                  <Image src="/2005/student_work_3.png" alt="Students Working 2" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </Card>
 
@@ -385,7 +385,7 @@ export default function Component() {
                   <CardTitle className="text-center font-bold"> Final Presentations </CardTitle>
                 </CardHeader>
                 <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="/class.png" alt="Classroom" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                  <Image src="/2005/class.png" alt="Classroom" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </Card>
 
@@ -396,7 +396,7 @@ export default function Component() {
                   <CardTitle className="text-center font-bold"> Judging Panel </CardTitle>
                 </CardHeader>
                 <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="/panel.png" alt="Judges Panel" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                  <Image src="/2005/panel.png" alt="Judges Panel" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </Card>
 
@@ -406,7 +406,7 @@ export default function Component() {
                   <CardTitle className="text-center font-bold"> Team Presenting </CardTitle>
                 </CardHeader>
                 <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="/group_pres_1.png" alt="Group Pres 1" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                  <Image src="/2005/group_pres_1.png" alt="Group Pres 1" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </Card>
               
@@ -417,7 +417,7 @@ export default function Component() {
                   <CardTitle className="text-center font-bold"> Team Presenting </CardTitle>
                 </CardHeader>
                 <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="/group_pres_4.png" alt="Group Pres 2" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                  <Image src="/2005/group_pres_4.png" alt="Group Pres 2" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </Card>
               
@@ -427,7 +427,7 @@ export default function Component() {
                   <CardTitle className="text-center font-bold"> Organizers & Volunteers </CardTitle>
                 </CardHeader>
                 <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="/orgvol.png" alt="Group Pres 1" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                  <Image src="/2005/orgvol.png" alt="Group Pres 1" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </Card>
               
@@ -438,7 +438,7 @@ export default function Component() {
                   <CardTitle className="text-center font-bold"> Group Photo </CardTitle>
                 </CardHeader>
                 <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
-                  <Image src="/group_photo.png" alt="Group Pres 2" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
+                  <Image src="/2005/group_photo.png" alt="Group Pres 2" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
                 </div>
               </Card>
               
@@ -462,7 +462,7 @@ export default function Component() {
           <div className="max-w-3xl mx-auto overflow-hidden mb-8">
             <div className="h-80 bg-gradient-to-br from-[#0060AC] to-[#003A79] flex items-center justify-center relative overflow-hidden">
               <Image 
-                src="/Volunteers.png" 
+                src="/2005/Volunteers.png" 
                 alt="Volunteers" 
                 fill 
                 style={{objectFit: 'cover'}}
@@ -586,7 +586,7 @@ export default function Component() {
                 </h3>
                 <div className="bg-white rounded-xl p-3 shadow flex items-center justify-center mt-4">
                   
-                  <Image src="/Sponsor1.png" alt="Sponsor 1" width={180} height={100} style={{objectFit: 'contain'}} />
+                  <Image src="/2005/Sponsor1.png" alt="Sponsor 1" width={180} height={100} style={{objectFit: 'contain'}} />
             
                 </div>
               </CardContent>
@@ -598,7 +598,7 @@ export default function Component() {
             <CardContent className="p-6">
                 <h3 className="font-semibold text-[#003A79] mb-2">Department of Sociology, UTSC</h3>
                 <div className="bg-white rounded-xl p-3 shadow flex items-center justify-center mt-4">
-                  <Image src="/Sponsor2.png" alt="Sponsor 2" width={180} height={100} style={{objectFit: 'contain'}} />
+                  <Image src="/2005/Sponsor2.png" alt="Sponsor 2" width={180} height={100} style={{objectFit: 'contain'}} />
                 </div>
               </CardContent>
               </a>
@@ -609,7 +609,7 @@ export default function Component() {
             <CardContent className="p-6">
                 <h3 className="font-semibold text-[#003A79] mb-2">UTSC Library</h3>
                 <div className="bg-white rounded-xl p-3 shadow flex items-center justify-center mt-4">
-                  <Image src="/Sponsor3.png" alt="Sponsor 3" width={180} height={100} style={{objectFit: 'contain'}} />
+                  <Image src="/2005/Sponsor3.png" alt="Sponsor 3" width={180} height={100} style={{objectFit: 'contain'}} />
                 </div>
               </CardContent></a>
             </Card>
@@ -619,7 +619,7 @@ export default function Component() {
               <CardContent className="p-6">
                 <h3 className="font-semibold text-[#003A79] mb-2">Department of Political Science, UTSC</h3>
                 <div className="bg-white rounded-xl p-3 shadow flex items-center justify-center mt-4">
-                  <Image src="/Sponsor4.png" alt="Sponsor 4" width={180} height={100} style={{objectFit: 'contain'}} />
+                  <Image src="/2005/Sponsor4.png" alt="Sponsor 4" width={180} height={100} style={{objectFit: 'contain'}} />
                 </div>
               </CardContent></a>
             </Card>
@@ -629,7 +629,7 @@ export default function Component() {
               <CardContent className="p-6">
                 <h3 className="font-semibold text-[#003A79] mb-2">SDGs @UofT </h3>
                 <div className="bg-white rounded-xl p-3 shadow flex items-center justify-center mt-4">
-                  <Image src="/Sponsor5.png" alt="Sponsor 5" width={180} height={100} style={{objectFit: 'contain'}} />
+                  <Image src="/2005/Sponsor5.png" alt="Sponsor 5" width={180} height={100} style={{objectFit: 'contain'}} />
                 </div>
               </CardContent></a>
             </Card>
@@ -641,7 +641,7 @@ export default function Component() {
                   Data Sciences Institute
                 </h3>
                 <div className="bg-white rounded-xl p-3 shadow flex items-center justify-center mt-4">
-                  <Image src="/Sponsor6.png" alt="Sponsor 6" width={180} height={100} style={{objectFit: 'contain'}} />
+                  <Image src="/2005/Sponsor6.png" alt="Sponsor 6" width={180} height={100} style={{objectFit: 'contain'}} />
                 </div>
                 </CardContent></a>
             </Card>
