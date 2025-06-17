@@ -163,7 +163,7 @@ export default function Component() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto overflow-hidden mb-8">
             <div className="h-96 bg-gradient-to-br from-[#003A79] to-[#0060AC] flex items-center justify-center relative overflow-hidden">
-              <Image src="/Group.png" alt="Group Photo of All 57 Participants" fill style={{objectFit: 'cover'}} />
+              <Image src="/group_photo.png" alt="Group Photo of All 57 Participants" fill style={{objectFit: 'cover'}} />
             </div>
           </div>
           <div className="text-center mb-12">
