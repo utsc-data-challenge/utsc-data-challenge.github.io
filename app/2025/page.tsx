@@ -403,7 +403,7 @@ export default function Component() {
               {/* Team Presenting */}
               <Card className="overflow-hidden border-4 border-blue-400">
                 <CardHeader className="bg-gradient-to-r from-blue-400 to-blue-500 text-white py-3">
-                  <CardTitle className="text-center font-bold"> Team Presenting </CardTitle>
+                  <CardTitle className="text-center font-bold"> Team Presentation </CardTitle>
                 </CardHeader>
                 <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
                   <Image src="/2005/group_pres_1.png" alt="Group Pres 1" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
@@ -414,7 +414,7 @@ export default function Component() {
               {/* Team Presenting */}
               <Card className="overflow-hidden border-4 border-blue-400">
                 <CardHeader className="bg-gradient-to-r from-blue-400 to-blue-500 text-white py-3">
-                  <CardTitle className="text-center font-bold"> Team Presenting </CardTitle>
+                  <CardTitle className="text-center font-bold"> Team Presentation </CardTitle>
                 </CardHeader>
                 <div className="h-64 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center relative overflow-hidden">
                   <Image src="/2005/group_pres_4.png" alt="Group Pres 2" fill style={{objectFit: 'cover'}} className="absolute inset-0" />
